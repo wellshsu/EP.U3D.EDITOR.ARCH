@@ -1,8 +1,8 @@
 {
-  "name": "ep.u3d.editor.arcm",
+  "name": "ep.u3d.editor.arch",
   "displayName": "EP.U3D.EDITOR.ARCH",
   "description": "Archive editor.",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "unity": "2019.2",
   "unityRelease": "0a12",
   "relatedPackages": {},
