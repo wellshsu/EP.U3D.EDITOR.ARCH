@@ -117,7 +117,15 @@ namespace EP.U3D.EDITOR.ARCH
             if (Directory.Exists(Constants.BUILD_ARCHIVE_PATH))
             {
                 DirectoryInfo binDirectory = new DirectoryInfo(Constants.BUILD_ARCHIVE_PATH);
-                FileSystemInfo[] files = isdir ? binDirectory.GetDirectories() : binDirectory.GetFiles();
+                FileSystemInfo[] files;
+                if (isdir)
+                {
+                    files = binDirectory.GetDirectories();
+                }
+                else
+                {
+                    files = binDirectory.GetFiles();
+                }
                 if (files != null && files.Length > 0)
                 {
                     for (int i = 0; i < files.Length; i++)
